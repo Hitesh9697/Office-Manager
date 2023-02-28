@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuItemDrawer"
+        android:enabled="true"
+        android:icon="@drawable/menu_selector"
+        android:title="@string/menu"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuItemHome"
+        android:enabled="true"
+        android:icon="@drawable/home_selector"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuItemLeave"
+        android:enabled="true"
+        android:icon="@drawable/leave_selector"
+        android:title="@string/leave"
+        app:showAsAction="ifRoom" />
+</menu>

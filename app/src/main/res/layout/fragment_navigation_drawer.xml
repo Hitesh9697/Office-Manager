@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragments.navigation_drawer.NavigationDrawerFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/dimen0dp"
+        android:layout_height="@dimen/dimen0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.4"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dimen40dp"
+        />
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvName"
+        style="@style/MyTextStyleSemiBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen40dp"
+        android:paddingHorizontal="@dimen/dimen20dp"
+        android:text="Name"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/textsize22sp"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUsername"
+        style="@style/MyTextStyleRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen5dp"
+        android:paddingHorizontal="@dimen/dimen20dp"
+        android:text=" \u0040Name123"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/textsize16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <View
+        android:id="@+id/vUsernameDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen1dp"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:background="@color/light_purple_divider"
+        app:layout_constraintTop_toBottomOf="@id/tvUsername" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNavigationDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vUsernameDivider"
+        tools:listitem="@layout/row_navigation_drawer_list_view"
+        android:layout_marginHorizontal="@dimen/dimen10dp"
+        android:layout_marginTop="@dimen/dimen10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

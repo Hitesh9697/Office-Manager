@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Office Manager</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="menu">Menu</string>
+    <string name="home">Home</string>
+    <string name="leave">Leave</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ticket_tracker">Ticket Tracker</string>
+    <string name="contact_us">Contact us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+</resources>

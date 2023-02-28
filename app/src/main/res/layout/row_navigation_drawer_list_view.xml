@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/menuIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvMenuText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/dimen10dp"
+        android:layout_marginVertical="@dimen/dimen15dp"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvMenuText"
+        android:layout_width="@dimen/dimen0dp"
+        android:layout_height="wrap_content"
+        style="@style/MyTextStyleRegular"
+        android:textSize="@dimen/textsize18sp"
+        android:textColor="@color/primary_purple"
+        android:text="menu item"
+        app:layout_constraintTop_toTopOf="@id/menuIcon"
+        app:layout_constraintBottom_toBottomOf="@id/menuIcon"
+        app:layout_constraintStart_toEndOf="@id/menuIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
